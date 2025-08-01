@@ -7,15 +7,18 @@
 - Índice de Fuerza Relativa (RSI de 14 días): Aunque este es un indicador de más corto plazo, en esta estrategia no se usa de forma aislada. Su función es encontrar un punto de entrada oportuno dentro de una tendencia alcista ya confirmada por las medias móviles. Busca responder a la pregunta: "Dado que la acción está en una buena tendencia a largo plazo, ¿está actualmente 'sobrevendida' o en un buen precio para entrar?".
 
 **En Resumen**
+
 Puedes pensar en la lógica del script de esta manera:
 
 - Estrategia (Largo Plazo): Primero, usa las medias móviles de 50 y 200 días para confirmar que la acción tiene una tendencia alcista sólida y sostenida. Esta es la condición principal.
 - Táctica (Corto Plazo): Una vez confirmada la tendencia general, usa el RSI para identificar un buen momento para la compra, idealmente cuando el precio ha tenido una caída temporal (RSI bajo) dentro de esa gran tendencia alcista.
 
 **ESCANER DE MERCADO**
+
 Dada una lista finita de tickers hace el **analisis individual** para cada una y devuelve un top 3 recomendado
 
 **PLANIFICADOR (3/6 MESES)**
+
 **Indicadores**
 - Medias Móviles de 20 y 50 días (Tendencia): Nos dicen la dirección general del precio (¿va hacia arriba?).
 - Momentum: Se calcula el rendimiento de los últimos 3 meses para medir la fuerza reciente. Nos dice la fuerza de esa dirección (¿está subiendo con ganas?).
