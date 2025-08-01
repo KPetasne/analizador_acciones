@@ -4,6 +4,9 @@ import pandas as pd
 import google.generativeai as genai
 import os
 import sys
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # --- Configuración de la API de Gemini (igual que antes) ---
 try:
