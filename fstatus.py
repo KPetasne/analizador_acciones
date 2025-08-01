@@ -54,7 +54,7 @@ def analizar_con_gemini(ticker_symbol):
     Tu tarea es analizar estos datos para determinar la "salud" financiera de la empresa y ofrecer una conclusión clara.
     Considera aspectos como la rentabilidad, la liquidez, el endeudamiento y el crecimiento.
     
-    Responde en español y de una manera estructurada en html que permita el renderizado.
+    Responde en español y de una manera estructurada en html que permita el renderizado como si se fuera a insertar dentro de un <div>
 
     Balance General (últimos años):
     {datos_financieros['balance_sheet'].to_string()}
