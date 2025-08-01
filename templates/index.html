@@ -115,6 +115,7 @@
                                 <li class="list-group-item d-flex justify-content-between">SMA (50 días): <span>{{ resultado_individual.sma50_actual }}</span></li>
                                 <li class="list-group-item d-flex justify-content-between">SMA (200 días): <span>{{ resultado_individual.sma200_actual }}</span></li>
                                 <li class="list-group-item d-flex justify-content-between bg-light"><strong>Recomendación:</strong> <strong class="{{ resultado_individual.clase_css }}">{{ resultado_individual.recomendacion }}</strong></li>
+                                <li class="list-group-item d-flex justify-content-between bg-light"><strong>Recomendacion IA:</strong> <strong class="{{ resultado_individual.clase_css }}">{{ resultado_individual.fstatus }}</strong> </li>
                             </ul>
                         </div>
                     {% endif %}
