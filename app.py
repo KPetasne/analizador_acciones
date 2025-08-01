@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import yfinance as yf
 import pandas as pd
+import fstatus
 
 app = Flask(__name__)
 
@@ -45,7 +46,8 @@ def analizar_largo_plazo(simbolo: str):
             'sma50_actual': f"${historial['SMA50'].iloc[-1]:,.2f}",
             'sma200_actual': f"${historial['SMA200'].iloc[-1]:,.2f}",
             'puntuacion_raw': puntuacion, 'puntuacion_texto': f"{puntuacion} / 3",
-            'recomendacion': recomendacion, 'clase_css': clase_css
+            'recomendacion': recomendacion, 'clase_css': clase_css,
+            'fstatus': fstatus.analizar_con_gemini(simbolo)
         }
     except Exception:
         return None
